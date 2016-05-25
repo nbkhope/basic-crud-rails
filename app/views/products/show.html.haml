@@ -1,0 +1,6 @@
+%h1
+  != "#{@product.name} <strong>$#{@product.price}</strong>"
+
+= @product.description
+
+%div= link_to 'Back', products_path

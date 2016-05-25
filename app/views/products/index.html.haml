@@ -1,5 +1,7 @@
 %h1 All Products
 
+= link_to 'Add', new_product_path
+
 %ul
   - @products.each do |product|
-    %li= product.name
+    %li= link_to product.name, product_path(product.id)
